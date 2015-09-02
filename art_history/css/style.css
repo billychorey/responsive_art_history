@@ -16,6 +16,10 @@
 
 /***** GENERIC STYLES *************/
 /**********************************/
+body{
+	background-color:#d7eaf4;
+}
+
 h1, h2, h3, h4, h5, p, a{
 	font-family:helvetica, arial, sans-serif;
 }
@@ -27,8 +31,15 @@ h1, h2{
 	margin:0 auto;
 	background-color: #d7eaf4;
 }
+
+.wrapper h1{
+	text-align:left;
+	padding-top: 20px;
+	font-weight: lighter;
+}
 nav{
 	display: block;
+	clear:both;
 }
 
 nav ul{
@@ -36,10 +47,12 @@ nav ul{
 	margin:0;
 	padding:0;
 	list-style:none;
+	border-top: solid 1px white;
 }
 nav li{
 	display: block;
 	margin-bottom: 5px;
+
 
 }
 
@@ -70,26 +83,67 @@ nav a{
 	background:white;
 	width:95%;
 	margin: 0 auto;
+	padding-bottom:15px;
+	
 }
 
-.image{
+.about, h1{
+	font-weight:bold;
+}
+
+.about, h1, p{
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.about img{
+	display:none;
+
+}
+
+
+.cubism_box{
 	background:white;
 	width:95%;
 	margin:0 auto;
 	text-align:center;
 	font-size:.8em;
 	font-style:italic;
+	padding-bottom:15px;
 }
 
 .expressionism{
-	border-top: 1px solid blue;
+	padding-bottom: 80px;
 }
+
+
+.expressionism h2{
+	border-top: 1px solid blue;
+	padding-top:25px;
+	color: #202d9d;
+	display: block;
+}
+
+
+.expressionism_box{
+	background:white;
+	width:95%;
+	margin:0 auto;
+	text-align:center;
+	font-size:.8em;
+	font-style:italic;
+	padding-bottom:15px;
+}
+
+
 
 .related{
 	background: #8781bd;
 	width:95%;
 	margin:0 auto;
-	
+	padding-top:20px;
+	padding-bottom:20px;
+	display:block;
 	color:white;
 	
 
@@ -98,99 +152,350 @@ nav a{
 }
 .related h2{
 	color:white;
+	margin-left: 2%;
+	margin-top: 5%;
+	display:block;
+	text-align:left;
 
+}
+
+.related h3{
+	padding-top:25px;
+}
+
+.related img{
+	display: none;
+	margin-top: 10px;
+}
+.related ul{
+	display:block;
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-top:solid 1px white;
+
+}
+
+.related a {
+	padding-bottom: 25px;
+	}
 }
 
 
 
+.related li{
+	display: block;
+	margin-bottom:5px;
+	text-align:left;
+	border-bottom: solid 1px white;
+
+}
 .related h3{
 	
 	padding:top: 20px;
 	color: #caf6ff;
 	margin-top: 10px;
-	
-	
+	margin-left:2%;
 
+	
 }
-.related p{
-	color:white;
 
-}
 .related a{
-
 	color:#caf6ff;
-	
-	
-
-}
-
-.articles{
-	border-top: 1px solid white;
-	padding:10px;
-}
-
-.articles a{
-	display: block;
+	display:block;
+	font-size:.8em;
 	text-align:right;
+	padding-bottom:40px;
+	border-bottom: 1px solid white;
+	margin-right:2%;
+
 }
+
+
+
 footer{
 	padding-top: 10px;
 	background-color:#4c486d;
 	color:white;
+	padding-bottom:40px;
+	padding-left:20      %;
 }
+
+}
+
+footer ul{
+	
+	display:block;
+	padding:none;
+	margin:0,auto;
+	list-style:none;
+	padding:none;
+
+	
+}
+footer li{
+	
+	list-style:none;
+	text-align: left;
+	margin:0,auto;
+
+	
+	
+
+	
+}
+
 footer a{
 	
 	text-align: center;
 	color:white;
+	padding-bottom: 40px;
+
 }
-footer{
-	clear:both;
-}
-footer ul{
-	list-style:none;
+
+#home{
+	padding:0;
 	
 }
-footer li{
-	text-align: center;
-	margin:0;
+
+#donate{
+	padding:0;
+
 }
+
+/* --------------------------------*/
+
+
+
+
+
 
 
 @media screen and (min-width:600px){
 
-nav li{
-	display: inline-block;
-	margin-right: 20px;
-	font-family: helvetica;
 
+#lady{
+	display:block;
+	float:right;
+	width:20%;
+}
+#top{
+	display:none;
+}
+
+.cubism_box{
+	
+	float:right;
+	width:40%;
+	margin-left:5%;
+
+}
+
+.expressionism_box{
+	float:left;
+	width:40%;
+	margin-right:5%;
+
+}
+
+.related img{
+	display:block;
+	float:left;
+	width:20%;
+	margin-right: 5%;
+
+
+}
+
+footer{
+	display:block;
+	padding-left:20%;
+}
+
+#home{
+	display:inline-block;
+	width:45%;
+	vertical-align:top;
+
+}
+#donate{
+	display:inline-block;
+	width:45%;
+	vertical-align:top;
 }
 
 
 
 
-}
+
+
+
 
 nav a:hover{
 	background: purple;
 }
-}
+
 @media screen and (min-width:800px){
-	.wrapper{
-		max-width: 1024px;
-	}
-	.main_content{
-		float:left;
-		width:70%;
-		padding-right:4%;
-		font-family: "Comic Sans MS";
 
-	}
-	.sidebar{
-		float:left;
-		width:26%;
+nav ul{
+	display:block;
+	
+	padding-left:55%;
+	background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a62b6+0,192598+100 */
+	background: #4a62b6; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4a62b6 0%, #192598 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4a62b6), color-stop(100%,#192598)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4a62b6 0%,#192598 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.;
+}
+nav li{
+	display:inline-block;
+	list-style:none;
+}
+nav a{
+	background:none;
+}
 
-	}
+#lady{
+	display:none;
 
+}
+
+#top{
+	display:block;
+	float:right;
+	width:20%;
+}
+
+.copy{
+	display:block;
+
+}
+.cubism{
+	display:inline-block;
+	width:40%;
+	margin-right:15%;
+	vertical-align:top;
+	
+
+}
+.cubism_box{
+	width:40%;
+}
+
+.expressionism{
+	display:inline-block;
+	width:40%;
+	vertical-align:top;
+	margin-top:none;
+	padding-top:none;
+
+	
+}
+
+
+.expressionism h2{
+	border-top:none;
+	margin-top:none;
+	padding-top:none;
+}
+.expressionism_box{
+	width:40%;
+}
+.related{
+	display:block;
+	background:white;
+}
+
+.related h2{
+	color: #202d9d;
+}
+
+.related h3{
+	color: #8781bd;
+	text-align:center;
+}
+.related p{
+	color:black;
+	text-align:center;
+}
+.related img{
+	float:none;
+	width:70%;
+	margin:0, auto;
+}
+
+.related a{
+	margin:0,auto;
+	width:80%;
+	background:
+	background: -moz-linear-gradient(top,  #a49ece 0%, #7769bb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a49ece), color-stop(100%,#7769bb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a49ece 0%,#7769bb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a49ece 0%,#7769bb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a49ece 0%,#7769bb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a49ece 0%,#7769bb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a49ece', endColorstr='#7769bb',GradientType=0 ); /* IE6-9 */
+;
+	border-radius: 5px;
+	text-align:center;
+	padding-top:10%;
+	color:white;
+	text-decoration:none;
+	vertical-align: auto;
+}
+
+.related ul{
+	display:block;
+	margin:0, auto;
+}
+
+.related li{
+
+	display:inline-block;
+	width:28%;
+}
+
+footer{
+	padding:0;
+}
+
+footer ul{
+	
+	display:block;
+	
+
+}
+
+footer li{
+	display:inline-block;
+	
+
+
+}
+
+
+	
+#home{
+	display:block;
+}	
+
+#home a{
+	width:33%;
+
+}
+
+#donate{
+	display:block;
+}
+#donate a{
+	width:20%;
+	
+}
+	
 	
 
 
