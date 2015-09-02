@@ -139,8 +139,9 @@ footer{
 	color:white;
 }
 footer a{
-	text-decoration:none;
+	
 	text-align: center;
+	color:white;
 }
 footer{
 	clear:both;
@@ -151,6 +152,7 @@ footer ul{
 }
 footer li{
 	text-align: center;
+	margin:0;
 }
 
 
