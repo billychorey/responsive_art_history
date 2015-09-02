@@ -91,29 +91,24 @@ nav a{
 	margin:0 auto;
 	
 	color:white;
-	position:relative;
+	
 
 
 
 }
-.articles{
+.related h2{
 	color:white;
-}
-.articles h2, p{
-
-	border-bottom: 1px solid white;
-}
 
 }
-.related ul{
-	list-style:none;
-}
+
+
+
 .related h3{
 	
 	padding:top: 20px;
 	color: #caf6ff;
 	margin-top: 10px;
-	display: block;
+	
 	
 
 }
@@ -122,17 +117,22 @@ nav a{
 
 }
 .related a{
-	text-decoration:none;
+
 	color:#caf6ff;
-	position:absolute;
-	right:5px;
-	margin-top:5px;
-	margin-bottom:5px;
 	
 	
 
 }
 
+.articles{
+	border-top: 1px solid white;
+	padding:10px;
+}
+
+.articles a{
+	display: block;
+	text-align:right;
+}
 footer{
 	padding-top: 10px;
 	background-color:#4c486d;
