@@ -81,20 +81,41 @@ nav a{
 	font-style:italic;
 }
 
+.expressionism{
+	border-top: 1px solid blue;
+}
+
 .related{
 	background: #8781bd;
 	width:95%;
 	margin:0 auto;
-	position: relative;
 	
+	color:white;
+	position:relative;
 
+
+
+}
+.articles{
+	color:white;
+}
+.articles h2, p{
+
+	border-bottom: 1px solid white;
+}
 
 }
 .related ul{
 	list-style:none;
 }
 .related h3{
+	
+	padding:top: 20px;
 	color: #caf6ff;
+	margin-top: 10px;
+	display: block;
+	
+
 }
 .related p{
 	color:white;
@@ -103,14 +124,17 @@ nav a{
 .related a{
 	text-decoration:none;
 	color:#caf6ff;
-	
 	position:absolute;
-	right:10px;
-	margin-bottom: 5px;
+	right:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+	
 
 }
 
 footer{
+	padding-top: 10px;
 	background-color:#4c486d;
 	color:white;
 }
