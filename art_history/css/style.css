@@ -303,8 +303,14 @@ footer a{
 	float:left;
 	width:20%;
 	margin-right: 5%;
+	margin-left:5%;
 
 
+
+}
+
+#first_image{
+	display:none;
 }
 
 footer{
@@ -337,6 +343,9 @@ nav a:hover{
 
 @media screen and (min-width:800px){
 
+
+
+
 nav ul{
 	display:block;
 	
@@ -359,6 +368,12 @@ nav a{
 	background:none;
 }
 
+.about{
+
+	display:block;
+
+}
+}
 #lady{
 	display:none;
 
@@ -368,6 +383,8 @@ nav a{
 	display:block;
 	float:right;
 	width:20%;
+	padding-top:20px;
+	margin-right:5%;
 }
 
 .copy{
@@ -408,6 +425,19 @@ nav a{
 .related{
 	display:block;
 	background:white;
+	margin:0, auto;
+}
+
+#first_image{
+	display:block;
+}
+
+#second_image{
+	display:none;
+}
+
+#third_image{
+	display:none;
 }
 
 .related h2{
