@@ -37,6 +37,10 @@ h1, h2{
 	padding-top: 20px;
 	font-weight: lighter;
 }
+img{
+	max-width:100%;
+	display:block;
+}
 nav{
 	display: block;
 	clear:both;
@@ -349,7 +353,8 @@ nav a:hover{
 nav ul{
 	display:block;
 	
-	padding-left:55%;
+	text-align:right;
+	border-radius: 5px;
 	background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a62b6+0,192598+100 */
 	background: #4a62b6; /* Old browsers */
 	background: -moz-linear-gradient(top,  #4a62b6 0%, #192598 100%); /* FF3.6+ */
@@ -383,7 +388,7 @@ nav a{
 	display:block;
 	float:right;
 	width:20%;
-	padding-top:20px;
+	padding-top:28px;
 	margin-right:5%;
 }
 
@@ -392,11 +397,18 @@ nav a{
 
 }
 .cubism{
-	display:inline-block;
-	width:40%;
-	margin-right:15%;
-	vertical-align:top;
+	float:left;
+	width:45%;
+	padding:0 2.5%;
+
 	
+	
+
+}
+
+.cubism_article h2{
+	padding-top:20px;
+	margin-top:0;
 
 }
 .cubism_box{
@@ -404,11 +416,10 @@ nav a{
 }
 
 .expressionism{
-	display:inline-block;
-	width:40%;
-	vertical-align:top;
-	margin-top:none;
-	padding-top:none;
+	float:left;
+	width:40%;	
+	padding:0 2.5%;
+	top-margin:0;
 
 	
 }
@@ -416,7 +427,7 @@ nav a{
 
 .expressionism h2{
 	border-top:none;
-	margin-top:none;
+	margin-top:0;
 	padding-top:none;
 }
 .expressionism_box{
@@ -430,6 +441,7 @@ nav a{
 
 #first_image{
 	display:block;
+	margin:0, auto;
 }
 
 #second_image{
@@ -447,10 +459,12 @@ nav a{
 .related h3{
 	color: #8781bd;
 	text-align:center;
+	margin:0, auto;
 }
 .related p{
 	color:black;
 	text-align:center;
+	margin:0, auto;
 }
 .related img{
 	float:none;
@@ -486,22 +500,31 @@ nav a{
 .related li{
 
 	display:inline-block;
-	width:28%;
+	width:30%;
+	padding-left:0.5%;
+	padding-right:0.5%;
 }
 
 footer{
+	display:block;
 	padding:0;
+	
 }
 
 footer ul{
 	
 	display:block;
+	width:100%;
+	padding-left:0;
+	text-align:center;
+
 	
 
 }
 
 footer li{
 	display:inline-block;
+
 	
 
 
@@ -514,7 +537,8 @@ footer li{
 }	
 
 #home a{
-	width:33%;
+
+	text-align:center;
 
 }
 
@@ -522,7 +546,8 @@ footer li{
 	display:block;
 }
 #donate a{
-	width:20%;
+	
+	text-align:center;
 	
 }
 	
