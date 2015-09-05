@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <title>Page Title</title>
+        <title>Media Queries</title>
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,79 +16,134 @@
     <body>
 
         <!-- CONTENT FOR WEBSITE -->
+
         <div class="wrapper">
-            <header>
-                <nav>
+
+            <header class="site_header">
+
+                <h1 class="logo">Art History</h1>
+
+                <nav class="main_navigation">
                     <ul>
-                        <li><a href="">home</a></li>
-                        <li><a href="">about us</a></li>
-                        <li><a href="">contact us</a></li>
-                        
-
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Cubism</a></li>
+                        <li><a href="#">Expressionism</a></li>
                     </ul>
-
                 </nav>
-
-
+                
             </header>
-            
 
-            <div class="main_content">
-                <h1>HTML Ipsum Presents</h1>
-           
-                <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+            <section class="featured_content clearfix">
 
-                <h2>Header Level 2</h2>
-               
-                <ol>
-                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                    <li>Aliquam tincidunt mauris eu risus.</li>
-                </ol>
+                <img class="tablet_size" src="img/sitter.jpg" alt="Painting of Woman Sitting in Chair">
+                <img class="desktop_size" src="img/eye.jpg" alt="Abstract Painting of Face">
+                
+                <h1>Art History</h1>
 
-                <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in, convallis a nunc. Suspendisse potenti. Vivamus pharetra velit et sem gravida porta. Nulla justo nisl, placerat id tincidunt eget, dapibus eu enim. Donec vel metus id leo facilisis rhoncus faucibus sed</p>
+            </section>
 
-                <h3>Header Level 3</h3>
+            <section class="page_content clearfix">
+                
+                <article class="clearfix">
 
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <h2>Cubism</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in, convallis a nunc.</p>
+
+                    <div class="img_container img_right">
+
+                        <img src="img/guitar.jpg" alt="Cubist Paining of Guitar Still life">
+
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in, convallis a nunc. </p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in, convallis a nunc. Suspendisse potenti. Vivamus pharetra velit et sem gravida porta. Nulla justo nisl, placerat id tincidunt eget, dapibus eu enim. Donec vel metus id leo facilisis rhoncus faucibus sed quam.</p>
+
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie pharetra erat, id volutpat tellus varius eu. Vestibulum at mollis elit, vitae pulvinar metus. Mauris eget justo sit amet mauris eleifend semper. Cras vulputate, turpis at mollis molestie, lacus lacus vulputate nisl, at consequat felis diam eget nulla. Pellentesque id risus iaculis, ornare nisl at, ullamcorper felis.</p>
+                    
+                </article>
+
+                <article class="clearfix">
+
+                    <h2>Expressionism</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in, convallis a nunc.</p>
+
+                    <div class="img_container img_left">
+
+                        <img src="img/dog.jpg" alt="Expressionist Paining of Two Dogs">
+
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in. </p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut blandit justo. Phasellus lectus risus, cursus et semper in, convallis a nunc. Suspendisse potenti. Vivamus pharetra velit et sem gravida porta.</p>
+
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie pharetra erat, id volutpat tellus varius eu. Vestibulum at mollis elit, vitae pulvinar metus. Mauris eget justo sit amet mauris eleifend semper. Cras vulputate, turpis at mollis molestie, lacus lacus vulputate nisl, at consequat felis diam eget nulla..</p>
+                    
+                </article>
+
+            </section> <!-- END .page_content -->
+
+            <section class="related_articles">
+
+                <h2>Related Articles</h2>
+                
+                <ul class="clearfix">
+                    <li class="clearfix">
+                        <img src="img/creepy_girl.jpg" alt="Picture of Creepiest Doll Ever">
+                        <div>
+                            <h3><a href="#">Article Title About Art</a></h3>
+
+                            <p>This is a short synopsis of an article about some art stuff that might interest people.</p>
+                            
+                            <a class="read_more_link" href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="img/abstract.jpg" alt="Abstract Painting">
+                        <div>
+                            <h3><a href="#">Article Title About Art</a></h3>
+
+                            <p>This is a short synopsis of an article about some art stuff that might interest people.</p>
+                            
+                            <a class="read_more_link" href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="img/couple.jpg" alt="Painting of Couple">
+                        <div>
+                            <h3><a href="#">Article Title About Art</a></h3>
+
+                            <p>This is a short synopsis of an article about some art stuff that might interest people.</p>
+                            
+                            <a class="read_more_link" href="#">Read More</a>
+                        </div>
+                    </li>
                 </ul>
 
-                <pre><code>
-                #header h1 a { 
-                display: block; 
-                width: 300px; 
-                height: 80px; 
-                }
-                </code></pre>
+            </section>
 
+        </div> <!-- END .wrapper -->
 
-                </div>
+        <footer class="site_footer">
 
+            <nav class="secondary_navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cubism</a></li>
+                    <li><a href="#">Expressionism</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Visit a Museum</a></li>
+                    <li><a href="#">For the Kids</a></li>
+                    <li><a href="#">A Night at the Museum</a></li>
+                </ul>
+            </nav>
+            
+        </footer>
 
-
-                <div class="sidebar">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                </div>
-
-                <footer>
-                     <nav>
-                        <ul>
-                            <li><a href="">home</a></li>
-                            <li><a href="">about us</a></li>
-                            <li><a href="">contact us</a></li>
-                            
-
-                        </ul>
-
-                    </nav>
-                </footer>
-
-            </div> <!--END .wrapper -->
-
-
-
-        
         <script src="js/script.js"></script>
     </body>
 </html>
