@@ -23,24 +23,29 @@ body{
 h1, h2, h3, h4, h5, p, a{
 	font-family:helvetica, arial, sans-serif;
 }
+
 h1, h2{
 	color:#0000cc;
 }
+
 .wrapper{
 	width:95%;
 	margin:0 auto;
 	background-color: #d7eaf4;
 }
+header h1{
+	text-align:center;
+	font-weight:lighter;
+}
 
-.wrapper h1{
-	text-align:left;
-	padding-top: 20px;
-	font-weight: lighter;
-}
+
 img{
-	max-width:100%;
-	display:block;
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 nav{
 	display: block;
 	clear:both;
@@ -51,19 +56,18 @@ nav ul{
 	margin:0;
 	padding:0;
 	list-style:none;
-	border-top: solid 1px white;
 }
+
 nav li{
 	display: block;
 	margin-bottom: 5px;
-
-
 }
 
 nav a{
 	display: block;
 	padding: 15px 20px;
 	border-radius: 6px;
+	text-align:center;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a62b6+0,192598+100 */
 	background: #4a62b6; /* Old browsers */
 	background: -moz-linear-gradient(top,  #4a62b6 0%, #192598 100%); /* FF3.6+ */
@@ -73,39 +77,48 @@ nav a{
 	background: -ms-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #4a62b6 0%,#192598 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a62b6', endColorstr='#192598',GradientType=0 ); /* IE6-9 */
-
 	color: white;
 	text-decoration: none;
 }
-
-
-
-	
-
 
 .about{
 	background:white;
 	width:95%;
 	margin: 0 auto;
 	padding-bottom:15px;
-	
+	text-align:left;
+	margin-top:40px;	
 }
 
-.about, h1{
+.about h1{
 	font-weight:bold;
+	margin-left:2%;
+	margin-top:20px;
+	text-align:left;
+	margin-bottom:20px;
 }
 
-.about, h1, p{
+.about, p{
 	margin-left:2%;
 	margin-right:2%;
+	font-weight:normal;
+	font-weight:lighter;
+	line-height:1.4em;
 }
 
-.about img{
+.about .medium_img{
 	display:none;
-
+}
+.about .large_img{
+	display:none;
 }
 
 
+.cubism{
+	display:block;
+	width:100%;
+
+}
 .cubism_box{
 	background:white;
 	width:95%;
@@ -116,10 +129,14 @@ nav a{
 	padding-bottom:15px;
 }
 
-.expressionism{
-	padding-bottom: 80px;
+.cubism_box img{
+	margin:20px auto;
 }
 
+.expressionism{
+	display:block;
+	width:100%;
+}
 
 .expressionism h2{
 	border-top: 1px solid blue;
@@ -127,7 +144,6 @@ nav a{
 	color: #202d9d;
 	display: block;
 }
-
 
 .expressionism_box{
 	background:white;
@@ -139,7 +155,9 @@ nav a{
 	padding-bottom:15px;
 }
 
-
+.expressionism_box img{
+	margin:0 auto;
+}
 
 .related{
 	background: #8781bd;
@@ -149,18 +167,14 @@ nav a{
 	padding-bottom:20px;
 	display:block;
 	color:white;
-	
-
-
-
 }
+
 .related h2{
 	color:white;
 	margin-left: 2%;
 	margin-top: 5%;
 	display:block;
 	text-align:left;
-
 }
 
 .related h3{
@@ -177,31 +191,23 @@ nav a{
 	padding:0;
 	list-style:none;
 	border-top:solid 1px white;
-
 }
 
 .related a {
 	padding-bottom: 25px;
 	}
-}
-
-
 
 .related li{
 	display: block;
 	margin-bottom:5px;
 	text-align:left;
 	border-bottom: solid 1px white;
-
 }
-.related h3{
-	
+.related h3{	
 	padding:top: 20px;
 	color: #caf6ff;
 	margin-top: 10px;
-	margin-left:2%;
-
-	
+	margin-left:2%;	
 }
 
 .related a{
@@ -212,19 +218,14 @@ nav a{
 	padding-bottom:40px;
 	border-bottom: 1px solid white;
 	margin-right:2%;
-
 }
-
-
 
 footer{
 	padding-top: 10px;
 	background-color:#4c486d;
 	color:white;
 	padding-bottom:40px;
-	padding-left:20      %;
-}
-
+	padding-left:20 %;
 }
 
 footer ul{
@@ -234,19 +235,13 @@ footer ul{
 	margin:0,auto;
 	list-style:none;
 	padding:none;
-
-	
 }
-footer li{
-	
+
+footer li{	
 	list-style:none;
 	text-align: left;
 	margin:0,auto;
-
-	
-	
-
-	
+	line-height:1.4em;
 }
 
 footer a{
@@ -254,314 +249,99 @@ footer a{
 	text-align: center;
 	color:white;
 	padding-bottom: 40px;
-
 }
 
 #home{
 	padding:0;
-	
+	margin-bottom:40px;	
+}
+
+#home li{
+	text-align:center;
 }
 
 #donate{
 	padding:0;
+}
+
+#donate li{
+	text-align:center;
+}
+
+@media screen and (min-width: 600px){
+
+header h1{
+	text-align:left;
 
 }
 
-/* --------------------------------*/
-
-
-
-
-
-
-
-@media screen and (min-width:600px){
-
-
-#lady{
+.about .medium_img{
 	display:block;
 	float:right;
-	width:20%;
-}
-#top{
-	display:none;
-}
+} 
 
-.cubism_box{
-	
+.cubism .cubism_box{
 	float:right;
-	width:40%;
-	margin-left:5%;
-
-}
-
-.expressionism_box{
-	float:left;
-	width:40%;
-	margin-right:5%;
-
-}
-
-.related img{
-	display:block;
-	float:left;
-	width:20%;
-	margin-right: 5%;
-	margin-left:5%;
-
-
-
-}
-
-#first_image{
-	display:none;
-}
-
-footer{
-	display:block;
-	padding-left:20%;
-}
-
-#home{
-	display:inline-block;
-	width:45%;
-	vertical-align:top;
-
-}
-#donate{
-	display:inline-block;
-	width:45%;
-	vertical-align:top;
-}
-
-
-
-
-
-
-
-
-nav a:hover{
-	background: purple;
-}
-
-@media screen and (min-width:800px){
-
-
-
-
-nav ul{
-	display:block;
-	
-	text-align:right;
-	border-radius: 5px;
-	background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a62b6+0,192598+100 */
-	background: #4a62b6; /* Old browsers */
-	background: -moz-linear-gradient(top,  #4a62b6 0%, #192598 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4a62b6), color-stop(100%,#192598)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #4a62b6 0%,#192598 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #4a62b6 0%,#192598 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.;
-}
-nav li{
-	display:inline-block;
-	list-style:none;
-}
-nav a{
-	background:none;
-}
-
-.about{
-
-	display:block;
-
-}
-}
-#lady{
-	display:none;
-
-}
-
-#top{
-	display:block;
-	float:right;
-	width:20%;
-	padding-top:28px;
-	margin-right:5%;
-}
-
-.copy{
-	display:block;
-
-}
-.cubism{
-	float:left;
-	width:45%;
-	padding:0 2.5%;
-
-	
-	
-
-}
-
-.cubism_article h2{
-	padding-top:20px;
-	margin-top:0;
-
-}
-.cubism_box{
-	width:40%;
+	width:50%;
+	margin-left:3%;
 }
 
 .expressionism{
+	margin-bottom:60px;
+}
+
+.expressionism .expressionism_box{
 	float:left;
-	width:40%;	
-	padding:0 2.5%;
-	top-margin:0;
-
-	
+	width:50%;
+	margin-right:3%;
 }
 
-
-.expressionism h2{
-	border-top:none;
-	margin-top:0;
-	padding-top:none;
-}
-.expressionism_box{
-	width:40%;
-}
-.related{
-	display:block;
-	background:white;
-	margin:0, auto;
-}
-
-#first_image{
-	display:block;
-	margin:0, auto;
-}
-
-#second_image{
-	display:none;
-}
-
-#third_image{
-	display:none;
-}
-
-.related h2{
-	color: #202d9d;
-}
-
-.related h3{
-	color: #8781bd;
-	text-align:center;
-	margin:0, auto;
-}
-.related p{
-	color:black;
-	text-align:center;
-	margin:0, auto;
-}
 .related img{
-	float:none;
-	width:70%;
-	margin:0, auto;
-}
-
-.related a{
-	margin:0,auto;
-	width:80%;
-	background:
-	background: -moz-linear-gradient(top,  #a49ece 0%, #7769bb 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a49ece), color-stop(100%,#7769bb)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #a49ece 0%,#7769bb 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #a49ece 0%,#7769bb 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #a49ece 0%,#7769bb 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #a49ece 0%,#7769bb 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a49ece', endColorstr='#7769bb',GradientType=0 ); /* IE6-9 */
-;
-	border-radius: 5px;
-	text-align:center;
-	padding-top:10%;
-	color:white;
-	text-decoration:none;
-	vertical-align: auto;
-}
-
-.related ul{
 	display:block;
-	margin:0, auto;
+	float:left;
+	width:20%;
+	margin-left:3%;
+	margin-right:3%;
 }
 
-.related li{
+.article_2 #second_image{
+	display:none;
+}
 
-	display:inline-block;
-	width:30%;
-	padding-left:0.5%;
-	padding-right:0.5%;
+.article_3  #second_image{
+	display:none;
 }
 
 footer{
+	width:70%;
 	display:block;
-	padding:0;
-	
+	padding-bottom:100px;
+	padding-left:22%;
+	padding-right:8%;
 }
 
 footer ul{
-	
-	display:block;
-	width:100%;
-	padding-left:0;
-	text-align:center;
-
-	
+	float:left;
+	margin:0 auto;
+	width:50%;
 
 }
 
-footer li{
-	display:inline-block;
+#donate li{
+	text-align:left;
+	margin:0 auto;
+}
 
-	
+#home li{
+	text-align:left;
+	margin:0 auto;
+}
+
+/* I can't correctly align the nav links at the bottom*/
+
+
+
 
 
 }
-
-
-	
-#home{
-	display:block;
-}	
-
-#home a{
-
-	text-align:center;
-
-}
-
-#donate{
-	display:block;
-}
-#donate a{
-	
-	text-align:center;
-	
-}
-	
-	
-
-
-
-
-
-
-
-
-
-
-/***** SPECIFIC STYLES ************/
-/**********************************/
 
